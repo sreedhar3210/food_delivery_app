@@ -3,8 +3,9 @@ import React from 'react'
 export default function Card() {
     return (
         <div>
-            <div className="card mt-3" style={{ "width": "18rem", "maxHeight": "360px" }}>
-                <img className="card-img-top" src="..." alt="image-cap" />
+            <div className="card mt-3" style={{ "width": "18rem", "maxHeight": "400px" }}>
+                <img src="https://source.unsplash.com/random/900x700/?dosa" className="d-block w-100"  alt="third slide" />
+                <img className="card-img-top" src="" alt="nothing to display" />
                 {/* alt is used if image is failed to load --*/}
                 <div className="card-body">
                     <h5 className="card-title">Card title</h5>
