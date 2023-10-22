@@ -11,6 +11,7 @@ router.post("/createuser",
         try{
             const errors = validationResult(req);
             if(!errors.isEmpty()){
+                console.log("the following errors are found " + errors);
                 return res.status(400).json({ errors: errors.array() });
             }
             await User.create({
